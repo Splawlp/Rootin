@@ -57,3 +57,49 @@ table {
   --timer-color-dark: #E8A857;
   --li-color-dark: #D3D3D3;
 }
+
+body{
+  max-width: 400px;
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.header{
+  background-color: var(--accent-color-light);
+  width: 400px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-logo{
+  width: 39px;
+  height: 43px;
+}
+
+.header-title{
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.header-slogan{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* .fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
