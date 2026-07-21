@@ -56,6 +56,8 @@ table {
   --accent-color-dark: #518130;
   --timer-color-dark: #E8A857;
   --li-color-dark: #D3D3D3;
+
+  --btn-border-radius: 15px;
 }
 
 body{
@@ -95,11 +97,97 @@ body{
   font-size: 14px;
 }
 
-/* .fredoka-<uniquifier> {
+.main-section{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.timer {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-} */
+  font-weight: 500;
+  font-size: 96px;
+  color: var(--timer-color-light);
+}
+
+.timer-arr {
+  margin-bottom: 15px;
+}
+
+#timer-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pot-img {
+  margin-top: 115px;
+  width: 80px;
+  height: 75px;
+}
+
+.btn{
+  border-radius: var(--btn-border-radius);  
+  font-family: "Nunito", sans-serif;
+  transition: filter 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.main-list-item:hover {
+  filter: brightness(80%);
+}
+
+#start-btn {
+  width: 250px;
+  height: 43px;
+  background-color: var(--accent-color-light);
+  color: var(--text-color-light);
+  font-weight: 800;
+  font-size: 20px;
+  border: none;
+  padding-inline: 15px;
+}
+
+#donat-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 129px;
+  height: 31px;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid var(--timer-color-light);
+  border-right: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--timer-color-light);
+  margin-left: auto;
+}
+
+.donat-btn-logo {
+  width: 19px;
+  height: 21px;
+}
+
+.main-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  margin-top: 30px;
+}
+
+.main-list-item {
+  color: var(--li-color-light);
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
